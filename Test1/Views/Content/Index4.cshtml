@@ -1,0 +1,26 @@
+﻿@model Test1.Models.ContentViewModel
+
+@{
+    ViewData["Title"] = "Index4";
+}
+
+<h2>Index4</h2>
+
+<div>
+    <h4>ContentViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+    </dl>
+</div>
+<div>
+
+    @{
+        foreach (var item in Model.Contents)
+        {
+
+        }
+     }
+
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
